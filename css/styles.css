@@ -1,3 +1,15 @@
+body {
+  background-color: #c43cbd; }
 
+#text-input {
+  height: 1em;
+  width: 5em;
+  font-size: 5em; }
+
+#cards {
+  border: solid blue 2px; }
+
+#create-btn {
+  display: block; }
 
 /*# sourceMappingURL=styles.css.map */
