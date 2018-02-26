@@ -2,17 +2,19 @@
 
 
 let button = document.getElementById("create-btn");
+var counter = 0;
 
-button.addEventListener("click", function() {
+button.addEventListener("click", function(e) {
+    e.preventDefault();
+    counter = counter += 1;
+    let userInput = document.getElementById("text-input").value;
 
-    let userInput = document.getElementById("text-input");
-    // document.getElementById("cards").innerHTML = userInput.value;
-
-console.log(userInput.value);
-
-    var newDiv = document.createElement("div").setAttribute("id", "card1");
-    var newContent = document.createTextNode(userInput.value);
-    newDiv.appendChild(newContent);
+    var card = document.createElement("div");
+    card.setAttribute("id", "card" + counter);
+    var wrapper = document.getElementById("wrapper");
+    wrapper.appendChild(card);
+    var myCard = document.getElementById("card" + counter);
+    myCard.innerHTML = `<p>${userInput}</p><br><button id="delete-${counter}">DELETE</button>`;
 });
 
 

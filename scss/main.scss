@@ -8,10 +8,31 @@ body {
     font-size: 5em;
 }
 
-#cards {
-    border: solid blue 2px;
-}
-
 #create-btn {
     display: block;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div[id^="card"] {
+    border: solid red 3px;
+    background-color: white;
+    width: 9em;
+    height: 10em;
+    overflow-wrap: break-word;
+    position: relative;
+}
+
+p {
+    padding: .3em;
+}
+
+button[id^="delete-"] {
+    position: absolute;
+    left: 7em;
+    top: 12em;
 }
