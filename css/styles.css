@@ -12,7 +12,8 @@ body {
 #wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-around;
+  flex-wrap: wrap; }
 
 div[id^="card"] {
   border: solid red 3px;
@@ -20,7 +21,8 @@ div[id^="card"] {
   width: 9em;
   height: 10em;
   overflow-wrap: break-word;
-  position: relative; }
+  position: relative;
+  margin: 2em; }
 
 p {
   padding: .3em; }
